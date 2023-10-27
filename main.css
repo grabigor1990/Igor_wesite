@@ -1,24 +1,28 @@
 body {
+    padding-top: 4rem;
     background-color: #343131;
 }
 
 header {
-    /*position: fixed;*/
+    position: fixed;
     width: 100%;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-content: center;
     background-color: #343131;
 }
 
 nav {
+    flex-basis: 100%;
     display: flex;
     text-align: right;
+    align-content: center;
+    align-items: stretch;
 }
 
 nav a {
-    color: ghostwhite;
     text-decoration: none;
 }
 
@@ -39,30 +43,21 @@ nav a {
     font-family: Lightning;
     font-style: italic;
     text-shadow: 0 0 10px orangered;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .item-1 {
-    font-size: xx-large;
-
-    padding-left: 5%;
-    flex-grow: 3;
+    flex-grow: 1;
     text-align: left;
+    padding-left: 3%;
+    font-size: xx-large;
 }
 
-.item-2 {
-    flex-grow: 1;
-    text-align: right;
+.item-2:hover, .item-3:hover, .item-4:hover {
+    background-color: lightgray;
 }
 
-.item-3 {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.item-4 {
-    flex-grow: 1;
-    text-align: right;
-}
 
 .references-container {
     flex-basis: 100%;
