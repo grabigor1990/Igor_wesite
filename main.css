@@ -1,16 +1,49 @@
+body {
+    background-color: #343131;
+}
+
+header {
+    /*position: fixed;*/
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #343131;
+}
+
 nav {
     display: flex;
     text-align: right;
-    background-color: lightgray;
-    height: 10vh;
 }
+
+nav a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    min-height: 700px;
+}
+
 
 .item {
     display: flex;
     align-items: center;
+    font-size: x-large;
+    color: #ffe600;
+    font-family: Lightning;
+    font-style: italic;
+    text-shadow: 0 0 10px orangered;
 }
 
 .item-1 {
+    font-size: xx-large;
+
     padding-left: 5%;
     flex-grow: 3;
     text-align: left;
@@ -31,14 +64,6 @@ nav {
     text-align: right;
 }
 
-.flex-box {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 90vh;
-    min-height: 700px;
-}
-
 .references-container {
     flex-basis: 100%;
     background-color: lightblue;
@@ -54,3 +79,7 @@ nav {
     background-color: #fda5c4;
 }
 
+@font-face {
+    font-family: 'Lightning'; /* Choose a name for your font */
+    src: url('flash_font/flashext.ttf') format('truetype'); /* Replace 'path-to-your-font-file.ttf' with the actual file path */
+}
