@@ -45,6 +45,10 @@ nav a {
     text-shadow: 0 0 10px orangered;
     padding-left: 2%;
     padding-right: 2%;
+    border: solid 2px #343131;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .item-1 {
@@ -54,10 +58,54 @@ nav a {
     font-size: xx-large;
 }
 
-.item-2:hover, .item-3:hover, .item-4:hover {
-    background-color: lightgray;
+.item-1:hover {
+    animation: logo-animation linear forwards;
+    animation-duration: 5.5s;
 }
 
+.item-1::before,
+.item-1::after {
+    content: "🎸";
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.item-1:hover::before,
+.item-1:hover::after {
+    opacity: 1;
+}
+
+.item-2:hover, .item-3:hover, .item-4:hover {
+    animation: hover-animation linear forwards;
+    animation-duration: 0.75s;
+}
+
+@keyframes hover-animation {
+    100% {
+        background-color: hsl(0, 0%, 60%);
+        border-color: darkred;
+        box-shadow: 0 0 10px orangered;
+    }
+}
+
+@keyframes logo-animation {
+    5% {
+        font-size: 2.5rem;
+    }
+    15% {
+        font-size: 1rem;
+    }
+    35% {
+        font-size: 2rem;
+    }
+    50% {
+        font-size: .5rem;
+    }
+    70% {
+        font-size: 3rem;
+    }
+}
 
 .references-container {
     flex-basis: 100%;
@@ -78,3 +126,4 @@ nav a {
     font-family: 'Lightning'; /* Choose a name for your font */
     src: url('flash_font/flashext.ttf') format('truetype'); /* Replace 'path-to-your-font-file.ttf' with the actual file path */
 }
+

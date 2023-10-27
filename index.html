@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Air Guitar Academy</title>
     <link rel="stylesheet" href="main.css">
+    <script src="audio-handler.js"></script>
 </head>
 <body>
 
 <header>
     <nav class="topnav">
-        <a href="index.html" class="item item-1">Air Guitar Academy</a>
+        <a href="index.html" class="item item-1" onmouseover="playAudio()">Air Guitar Academy</a>
         <a href="julian/julian.html" class="item item-2">Courses</a>
         <a href="tony/product-page.html" class="item item-3">Products</a>
         <a href="igor/igor.html" class="item item-4">Meet the Team</a>
     </nav>
+
+    <audio id="logo-audio" src="logo.mp3"></audio>
 </header>
 
 <section class="flex-box">
