@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    text-align: right;
+    background-color: lightgray;
+    height: 10vh;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item-1 {
+    padding-left: 5%;
+    flex-grow: 3;
+    text-align: left;
+}
+
+.item-2 {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.item-3 {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.item-4 {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    min-height: 700px;
+}
+
+.references-container {
+    flex-basis: 100%;
+    background-color: lightblue;
+}
+
+.catalog-container {
+    flex-basis: 50%;
+    background-color: lightyellow;
+}
+
+.video-container {
+    flex-basis: 50%;
+    background-color: #fda5c4;
+}
+
