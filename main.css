@@ -76,7 +76,12 @@ nav a {
 
 .video-container {
     flex-basis: 50%;
-    background-color: #fda5c4;
+    background-color: #4b1c2c;
+    text-align: center;
+    color: #ffe600;
+    font-family: Lightning;
+    font-style: italic;
+    text-shadow: 0 0 10px orangered;
 }
 
 @font-face {
