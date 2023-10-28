@@ -24,10 +24,12 @@ nav a {
 
 .flex-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 90vh;
     min-height: 700px;
+    width: 100%;
+    border: red 1px solid ;
 }
 
 
@@ -65,10 +67,11 @@ nav a {
 }
 
 .references-container {
-    flex-basis: 50%;
+    flex-basis: 100%;
     background-color: lightblue;
     font-size: x-large;
     font-weight: bolder;
+    border: blue 1px solid;
 }
 
 .catalog-container {
