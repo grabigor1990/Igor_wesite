@@ -17,7 +17,10 @@ function pauseOtherAudios(audioId) {
     for (let i = 0; i < audios.length; i++) {
         if (audios[i] != audioId) {
             var audio = document.getElementById(audios[i]);
-            audio.pause();
+            if (audio != null)
+            {
+                audio.pause();
+            }
         }
     }
 }
