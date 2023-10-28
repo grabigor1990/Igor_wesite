@@ -1,0 +1,150 @@
+.product-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2f3d4f;
+    padding: 10vh 5%;
+}
+
+.showcase {
+    flex-basis: 50%;
+    flex-grow: 1;
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+}
+
+.showcase-description {
+    flex-basis: 100%;
+    color: #ffe600;
+    text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+    text-shadow: 0 0 3px orangered;
+    font-size: 1.5rem;
+}
+
+.showcase-box {
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 300px;
+    min-height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    z-index: 1;
+    border: transparent 15px;
+}
+
+.box-2 {
+    background-color: palevioletred;
+}
+
+.box-3 {
+    background-color: lightblue;
+}
+
+.showcase-box:hover {
+    animation: grow-shrink linear infinite;
+    animation-duration: 2s;
+    box-shadow: 0 0 25px #ec760c;
+}
+
+@keyframes grow-shrink {
+    25% {
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1.10);
+    }
+    75% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.description-container {
+    flex-grow: 1;
+    flex-basis: 50%;
+    min-height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.title {
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 4rem;
+    color: #ffe600;
+    font-family: Lightning;
+    font-style: italic;
+    text-shadow: 0 0 10px orangered;
+}
+
+.price {
+    padding-bottom: 3%;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffa743;
+    font-family: Lightning;
+    text-shadow: 0 0 10px orangered;
+}
+
+.description {
+    flex-basis: 100%;
+    color: #ffe600;
+    text-align: center;
+    /*font-style: italic;*/
+    font-family: sans-serif;
+    text-shadow: 0 0 5px orangered;
+    font-size: 1.5rem;
+}
+
+.lightning {
+    white-space: pre;
+    font-family: Lightning;
+    font-size: 3.5rem;
+    color: #5e005e;
+    text-shadow: 0 0 20px #ffe600;
+}
+
+.fire {
+    animation: burn 1.5s linear infinite alternate;
+}
+
+@keyframes burn {
+    from { box-shadow: -.1rem 0 .3rem #fefcc9, .1rem -.1rem .3rem #feec85, -.2rem -.2rem .4rem #ffae34, .2rem -.3rem .3rem #ec760c, -.2rem -.4rem .4rem #cd4606, .1rem -.5rem .7rem #973716, .1rem -.7rem .7rem #451b0e; }
+    45%  { box-shadow: .1rem -.2rem .5rem #fefcc9, .15rem 0 .4rem #feec85, -.1rem -.25rem .5rem #ffae34, .15rem -.45rem .5rem #ec760c, -.1rem -.5rem .6rem #cd4606, 0 -.8rem .6rem #973716, .2rem -1rem .8rem #451b0e; }
+    70%  { box-shadow: -.1rem 0 .3rem #fefcc9, .1rem -.1rem .3rem #feec85, -.2rem -.2rem .6rem #ffae34, .2rem -.3rem .4rem #ec760c, -.2rem -.4rem .7rem #cd4606, .1rem -.5rem .7rem #973716, .1rem -.7rem .9rem #451b0e; }
+    to   { box-shadow: -.1rem -.2rem .6rem #fefcc9, -.15rem 0 .6rem #feec85, .1rem -.25rem .6rem #ffae34, -.15rem -.45rem .5rem #ec760c, .1rem -.5rem .6rem #cd4606, 0 -.8rem .6rem #973716, -.2rem -1rem .8rem #451b0e; }
+}
+
+@media (max-width: 700px) {
+    .description {
+        font-size: 2.5rem;
+    }
+
+
+    .showcase-description {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .description-container {
+        padding: 10vh 5%;
+        border-bottom: solid 3px #ffe600;
+        margin-bottom: 3%;
+    }
+}
+

@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="../audio-handler.js"></script>
 </head>
 <body>
-<h1>Our air guitars would be here</h1>
-<a href="../index.html">HOME</a>
+
+<header>
+    <nav class="topnav">
+        <a href="../index.html" class="item item-1" onmouseover="playAudio('logo-audio')">Air Guitar Academy</a>
+        <a href="../julian/julian.html" class="item item-2">Courses</a>
+        <a href="../tony/product-page.html" class="item item-3">Products</a>
+        <a href="../igor/igor.html" class="item item-4">Meet the Team</a>
+    </nav>
+    <audio id="logo-audio" src="../logo.mp3"></audio>
+</header>
+
+<section class="product-flex-box">
+    <div class="showcase">
+        <div class="showcase-description">🎸🔥Hover for demo🔥🎸</div>
+        <div class="showcase-box box-1 fire" onmouseover="playAudio('showcase-1')" onmouseout="pauseOtherAudios('')"></div>
+    </div>
+    <div class="description-container">
+        <div class="title">AIRBLASTER 2430 Pro - X Series</div>
+        <div class="price">$3,299.-</div>
+        <p class="description">Our bestseller, played by artists around the world. At just over $3,000, it's the perfect entry-level model to the world of air guitar, and will get you shredding on the big stage in no time!</p>
+
+    </div>
+    <div class="showcase">
+        <div class="showcase-description">🎸🔥Hover for demo🔥🎸</div>
+        <div class="showcase-box box-2 fire" onmouseover="playAudio('showcase-2')" onmouseout="pauseOtherAudios('')"></div>
+    </div>
+    <div class="description-container">
+        <div class="title">SATAN'S BREATH</div>
+        <div class="price">$6,995.-</div>
+        <p class="description">Are you looking for <span class="lightning"> METAL!?!?</span>
+            <br><br>Then this is the guitar for you! <br><br>Get shredding, worship the devil and make Grandma cover her ears!</p>
+    </div>
+    <div class="showcase">
+        <div class="showcase-description">🎸🔥Hover for demo🔥🎸</div>
+        <div class="showcase-box box-3 fire" onmouseover="playAudio('showcase-3')" onmouseout="pauseOtherAudios('')">
+        </div>
+    </div>
+    <div class="description-container">
+        <div class="title">ELITE POWERSHOCK 6969F</div>
+        <div class="price">$9,999.-</div>
+        <p class="description">As heard on Airiana Grande's #1 worldwide hit, "You See Right Through Me".
+            <br><br>
+            Buy now while supplies last! Less than 100 in stock.</p>
+    </div>
+</section>
+
+<audio id="showcase-1" src="showcase-1.mp3"></audio>
+<audio id="showcase-2" src="showcase-2.mp3"></audio>
+<audio id="showcase-3" src="showcase-3.mp3"></audio>
+
 </body>
 </html>
