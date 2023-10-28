@@ -5,6 +5,7 @@
     align-items: center;
     background: linear-gradient(120deg, black, crimson);
     justify-content: space-evenly;
+    width: 100%;
 }
 .special_offer{
     border: 2px solid white;
@@ -24,10 +25,19 @@
     height: 25vh;
     width: 100%;
     text-align: left;
-    padding-top: 5%;
     padding-left: 15%;
+    padding-right: 10%;
+    overflow: hidden;
     color: white;
     font-size: x-large;
+   box-sizing: border-box;
+}
+.textImageContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 .text-container{
     flex: 1;
@@ -35,9 +45,8 @@
 }
 .image-container{
     flex: 1;
-    padding-left: 50%;
-
-    border: 2px greenyellow solid;
+    padding-left: 20px;
+    max-width: fit-content;
 }
 .image-container img{
     height: 25vh;
@@ -56,8 +65,8 @@
     }
 }
 .list-container{
-    width: 100%;
-    height: 35px;
+    width: 50%;
+    height: 45px;
     overflow: hidden;
 }
 .rolling-list{
