@@ -6,6 +6,8 @@
     background: linear-gradient(120deg, black, crimson);
     justify-content: space-evenly;
     width: 100%;
+    border: 1px solid green;
+    overflow: hidden;
 }
 .special_offer{
     border: 2px solid white;
