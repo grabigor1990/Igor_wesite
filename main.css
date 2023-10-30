@@ -29,7 +29,6 @@ nav a {
 
 .flex-box {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     height: 90vh;
     min-height: 700px;
