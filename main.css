@@ -1,35 +1,37 @@
 body {
+    padding-top: 4rem;
     background-color: #343131;
 }
 
 header {
-    /*position: fixed;*/
+    position: fixed;
     width: 100%;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-content: center;
     background-color: #343131;
 }
 
 nav {
+    flex-basis: 100%;
     display: flex;
     text-align: right;
+    align-content: center;
+    align-items: stretch;
 }
 
 nav a {
-    color: ghostwhite;
     text-decoration: none;
 }
 
 .flex-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 90vh;
     min-height: 700px;
-    width: 100%;
-    border: red 1px solid ;
 }
 
 
@@ -38,40 +40,81 @@ nav a {
     align-items: center;
     font-size: x-large;
     color: #ffe600;
-    font-family: Lightning, serif;
+    font-family: Lightning;
     font-style: italic;
     text-shadow: 0 0 10px orangered;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: solid 2px #343131;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .item-1 {
-    font-size: xx-large;
-
-    padding-left: 5%;
-    flex-grow: 3;
+    flex-grow: 1;
     text-align: left;
+    padding-left: 3%;
+    font-size: xx-large;
 }
 
-.item-2 {
-    flex-grow: 1;
-    text-align: right;
+.item-1:hover {
+    animation: logo-animation linear forwards;
+    animation-duration: 5.5s;
 }
 
-.item-3 {
-    flex-grow: 1;
-    text-align: right;
+.item-1::before,
+.item-1::after {
+    content: "🎸";
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.item-4 {
-    flex-grow: 1;
-    text-align: right;
+.item-1:hover::before,
+.item-1:hover::after {
+    opacity: 1;
+}
+
+.item-2:hover, .item-3:hover, .item-4:hover {
+    animation: hover-animation linear forwards;
+    animation-duration: 0.75s;
+}
+
+@keyframes hover-animation {
+    100% {
+        background-color: hsl(0, 0%, 60%);
+        border-color: darkred;
+        box-shadow: 0 0 10px orangered;
+    }
+}
+
+@keyframes logo-animation {
+    5% {
+        font-size: 2.5rem;
+        text-shadow: 0 0 45px #ffc400;
+    }
+    15% {
+        font-size: 1rem;
+        text-shadow: none;
+    }
+    35% {
+        font-size: 2rem;
+        text-shadow: 0 0 30px #ffc400;
+    }
+    50% {
+        text-shadow: none;
+        font-size: .75rem;
+    }
+    70% {
+        text-shadow: 0 0 45px #ffc400;
+        font-size: 3rem;
+    }
 }
 
 .references-container {
     flex-basis: 100%;
     background-color: lightblue;
-    font-size: x-large;
-    font-weight: bolder;
-    border: blue 1px solid;
 }
 
 .catalog-container {
@@ -81,10 +124,16 @@ nav a {
 
 .video-container {
     flex-basis: 50%;
-    background-color: #fda5c4;
+    background-color: #4b1c2c;
+    text-align: center;
+    color: #ffe600;
+    font-family: Lightning;
+    font-style: italic;
+    text-shadow: 0 0 10px orangered;
 }
 
 @font-face {
     font-family: 'Lightning'; /* Choose a name for your font */
     src: url('flash_font/flashext.ttf') format('truetype'); /* Replace 'path-to-your-font-file.ttf' with the actual file path */
 }
+
