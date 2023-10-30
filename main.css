@@ -29,8 +29,6 @@ nav a {
 .flex-box {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 90vh;
     min-height: 700px;
 }
 
@@ -124,7 +122,7 @@ nav a {
 
 .video-container {
     flex-basis: 50%;
-    background-color: #4b1c2c;
+    background-color: #343131;
     text-align: center;
     color: #ffe600;
     font-family: Lightning;

@@ -10,10 +10,11 @@
 
 }
 .content{
-    /*flex: 1 1 100px;*/
+    flex: 1 1 100px;
     display: grid;
     flex-basis: auto;
     place-content: center;
+    max-width: 70%;
     height: 30vh;
     overflow: hidden;
 
@@ -28,11 +29,11 @@
 }
 .description1{
     order: 2;
-    margin-outside: 50px;
-    flex-basis: 25%;
+    flex-basis: 29%;
     font-family: Lightning, serif;
-    font-size: xxx-large;
+    font-size: 165%;
     color: white;
+    padding-left: 10px;
     text-shadow: red 2px 2px;
 
 }
@@ -41,10 +42,9 @@
 }
 .description2{
     order: 3;
-    margin-outside: 50px;
     flex-basis: 25%;
     font-family: "Lucida Handwriting", serif;
-    font-size: larger;
+    font-size: 150%;
     color: purple;
     text-shadow: yellowgreen 2px 2px;
 }
@@ -53,11 +53,11 @@
 }
 .description3{
     order: 6;
-    margin-outside:50px;
     flex-basis: 25%;
     font-family: Vivaldi, serif;
-    font-size: xxx-large;
+    font-size: 150%;
     color: black;
+    padding-left: 10px;
     text-shadow: white 2px 2px;
 }
 .reviews{
